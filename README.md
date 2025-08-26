@@ -1,47 +1,56 @@
 # Sales Forecasting Project
 
-A Python project that predicts future retail sales using historical data with ARIMA time series forecasting.
+## Overview  
+A comprehensive sales forecasting project designed to predict future sales trends using statistical and machine learning models. The project leverages historical sales data to build accurate forecasts and assist business decision-making.
 
-## Table of Contents
-- [About](#about)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Evaluation](#evaluation)
-- [Business Insights](#business-insights)
-- [License](#license)
+## Features  
+- Data preprocessing and cleaning  
+- Exploratory data analysis (EDA) and visualization  
+- Time series forecasting models (ARIMA, Exponential Smoothing)  
+- Machine Learning models for regression  
+- Model evaluation using performance metrics  
+- Clear, organized code with reusable functions  
 
-## About
-This project uses retail sales data (daily sales, inventory, and price) to build a time series forecasting model using ARIMA. The goal is to predict future sales trends to assist better inventory management and marketing decision-making.
+## Installation  
+1. Clone the repository:  
+   ```
+   git clone https://github.com/pavi0307/sales-forecasting-project.git
+   ```  
+2. Create and activate a Python virtual environment (optional but recommended):  
+   ```
+   python -m venv venv
+   # On Windows:
+   venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   ```  
+3. Install required packages:  
+   ```
+   pip install -r requirements.txt
+   ```
 
-## Installation
-Make sure you have Python installed (version 3.6 or higher).  
-Install the required packages using:
+## Usage  
+- Prepare your sales data CSV files in the `/data` directory.  
+- Run the forecasting scripts located in the `/script` folder, e.g.:  
+  ```
+  python script/arima_forecast.py
+  ```  
+- View results and visualizations in output folders.
 
+## Project Structure  
+```
+/data                      # Raw and processed datasets  
+/script                    # Forecasting and analysis scripts  
+README.md                  # Project overview and instructions  
+requirements.txt           # Python dependencies  
+```
 
-## Usage
-1. Place your sales CSV file (`mock_kaggle.csv`) in the `data/` folder.  
-2. Run the preprocessing script to load and clean the data:
-3. Run the ARIMA forecasting model script:
+## Contributing  
+This is a personal project, but contributions are welcome.  
+If you'd like to improve the code or add new features, feel free to fork the repository and submit a pull request.
 
+## License  
+This project is licensed under the **MIT License**.
 
-
-This will output sales data visualization, model details, error metrics, and sales forecasts.
-
-## Features
-- Loads and preprocesses sales data  
-- Explores sales trends with visualizations  
-- Builds a time series sales forecasting model with ARIMA  
-- Evaluates model using MSE, MAE, and R-squared metrics  
-- Predicts and visualizes future sales trends  
-
-## Evaluation
-The ARIMA model's performance is measured with Mean Squared Error (MSE), Mean Absolute Error (MAE), and R-squared metrics to quantify prediction accuracy.
-
-## Business Insights
-The forecast helps businesses optimize inventory and marketing strategies by forecasting sales trends with historical data patterns. This reduces risks of overstock or shortages.
-
-## License
-This project is licensed under the MIT License. You are free to use, modify, and share it with attribution.
-
-
+## Contact  
+📧 Email: gbpavithra34@gmail.com
